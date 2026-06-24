@@ -414,30 +414,4 @@ document.addEventListener('DOMContentLoaded', () => {
         checkStatsScroll(); // Initial check
     }
 
-    // 7. Simple Contact Form Simulation
-    const contactForm = document.getElementById('contactForm');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const submitBtn = contactForm.querySelector('button[type="submit"]');
-            const originalText = submitBtn.textContent;
-            
-            submitBtn.textContent = '보내는 중...';
-            submitBtn.disabled = true;
-            
-            setTimeout(() => {
-                submitBtn.textContent = '성공적으로 전송됨 ✔';
-                submitBtn.style.background = 'linear-gradient(135deg, #10b981 0%, #059669 100%)';
-                
-                // Reset form
-                contactForm.reset();
-                
-                setTimeout(() => {
-                    submitBtn.textContent = originalText;
-                    submitBtn.style.background = '';
-                    submitBtn.disabled = false;
-                }, 3000);
-            }, 1500);
-        });
-    }
 });

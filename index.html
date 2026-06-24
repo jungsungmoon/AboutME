@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정성문 | AI 시스템 개발 & 인공지능 교육·챌린지 디렉터 포트폴리오</title>
+    <meta name="description" content="AI 시스템 개발, 인공지능 교육 및 해커톤/경진대회(Challenge)를 설계하고 리드하는 정성문의 이직용 포트폴리오 웹사이트입니다.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <!-- Background Decoration Grid & Gradients -->
+    <div class="bg-glow bg-glow-1"></div>
+    <div class="bg-glow bg-glow-2"></div>
+    <div class="bg-grid"></div>
+
+    <!-- Navigation Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">Sungmun</span>.AI
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item">About</a>
+                <a href="#skills" class="nav-item">Skills</a>
+                <a href="#experience" class="nav-item">Experience</a>
+                <a href="#projects" class="nav-item">Projects</a>
+                <a href="#contact" class="nav-item">Contact</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="메뉴 열기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="3" y1="12" x2="21" y2="12"></line>
+                    <line x1="3" y1="6" x2="21" y2="6"></line>
+                    <line x1="3" y1="18" x2="21" y2="18"></line>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <nav class="mobile-nav-links">
+            <a href="#about" class="mobile-nav-item">About</a>
+            <a href="#skills" class="mobile-nav-item">Skills</a>
+            <a href="#experience" class="mobile-nav-item">Experience</a>
+            <a href="#projects" class="mobile-nav-item">Projects</a>
+            <a href="#contact" class="mobile-nav-item">Contact</a>
+        </nav>
+    </div>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section" id="home">
+            <div class="hero-content">
+                <div class="badge fade-in">AI System Developer & Challenge Director</div>
+                <h1 class="hero-title fade-in">
+                    안녕하세요, 인공지능으로<br>
+                    <span class="gradient-text">경험과 시스템</span>을 설계하는<br>
+                    정성문입니다.
+                </h1>
+                <p class="hero-subtitle fade-in">
+                    현재 멀티캠퍼스에서 <strong>SSAFY AI 과정의 핵심 AI 시스템(AI 피드백, LabHub 만족도 분석 대시보드)을 개발</strong>하고, 대규모 <strong>AI 챌린지(Kaggle VQA)</strong>를 총괄 설계·운영하고 있습니다. 이론과 교육 설계는 물론, 실무 AI 파이프라인 엔지니어링까지 AI 테크의 가치를 현실화합니다.
+                </p>
+                <div class="hero-ctas fade-in">
+                    <a href="#projects" class="btn btn-primary">포트폴리오 보기</a>
+                    <a href="#contact" class="btn btn-secondary">연락하기</a>
+                </div>
+                <div class="hero-socials fade-in">
+                    <a href="https://moonsworkspace.notion.site/Moon-s-Workspace-9506b0b6ca234f94b95153edafdc86c9" target="_blank" class="social-link" title="Notion">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M4.6 2h14.8c1.4 0 2.6 1.2 2.6 2.6v14.8c0 1.4-1.2 2.6-2.6 2.6H4.6C3.2 22 2 20.8 2 19.4V4.6C2 3.2 3.2 2 4.6 2zm4.3 15.3c0 .3.2.5.5.5h1.2c.3 0 .5-.2.5-.5v-4.1l3 4.3c.1.2.3.3.5.3h1.3c.4 0 .6-.4.4-.7l-3.3-4.7 3-4.3c.2-.2.1-.6-.2-.6h-1.2c-.3 0-.5.1-.6.3l-2.6 3.8V7.5c0-.3-.2-.5-.5-.5H9.4c-.3 0-.5.2-.5.5v9.8z"/></svg>
+                        <span>Notion</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/%EC%84%B1%EB%AC%B8-%EC%A0%95-71964028b/" target="_blank" class="social-link" title="LinkedIn">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://github.com/jungsungmoon" target="_blank" class="social-link" title="GitHub">
+                        <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual fade-in">
+                <div class="dashboard-widget glass">
+                    <div class="card-glow"></div>
+                    <div class="widget-header">
+                        <div class="window-controls">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="widget-tabs">
+                            <button class="widget-tab-btn active" data-widget="feedback">AI Feedback</button>
+                            <button class="widget-tab-btn" data-widget="labhub">LabHub</button>
+                        </div>
+                    </div>
+                    
+                    <div class="widget-body">
+                        <!-- Tab Content 1: AI Feedback -->
+                        <div class="widget-tab-content active" id="widget-feedback">
+                            <div class="system-status">
+                                <span class="system-url">aibot.ssafy.io</span>
+                                <span class="status-badge pulse">Running</span>
+                            </div>
+                            <h3 class="system-title">SSAFY AI 피드백 시스템</h3>
+                            <p class="system-subtitle">과목평가 자동 채점 및 개인별 맞춤 피드백 시스템</p>
+                            
+                            <div class="mock-metrics">
+                                <div class="mock-metric">
+                                    <span class="m-val">900+</span>
+                                    <span class="m-lbl">동시 사용</span>
+                                </div>
+                                <div class="mock-metric">
+                                    <span class="m-val">100%</span>
+                                    <span class="m-lbl">자동 채점</span>
+                                </div>
+                                <div class="mock-metric">
+                                    <span class="m-val">AI</span>
+                                    <span class="m-lbl">튜터 챗봇</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="system-features">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>코드 및 서술형 답안 실시간 LLM 분석</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>개념 지식 레이더 차트 시각화</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>오답 개념 기반 맞춤형 복습 퀴즈 자동 생성</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Tab Content 2: LabHub -->
+                        <div class="widget-tab-content" id="widget-labhub">
+                            <div class="system-status">
+                                <span class="system-url">LabHub Dashboard</span>
+                                <span class="status-badge pulse color-green">Online</span>
+                            </div>
+                            <h3 class="system-title">LabHub 만족도 분석 시스템</h3>
+                            <p class="system-subtitle">설문 파일 파싱 및 LLM 감성 분석 대시보드</p>
+                            
+                            <div class="mock-metrics">
+                                <div class="mock-metric">
+                                    <span class="m-val">50+</span>
+                                    <span class="m-lbl">설문 파일</span>
+                                </div>
+                                <div class="mock-metric">
+                                    <span class="m-val">80%</span>
+                                    <span class="m-lbl">공수 절감</span>
+                                </div>
+                                <div class="mock-metric">
+                                    <span class="m-val">NLP</span>
+                                    <span class="m-lbl">감성 분석</span>
+                                </div>
+                            </div>
+                            
+                            <ul class="system-features">
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>만족도 설문(.xlsx) 자동 파싱 파이프라인</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>수천 건의 수강생 자유 서술문 긍/부정 자동 태깅</span>
+                                </li>
+                                <li>
+                                    <span class="check-icon">✓</span>
+                                    <span>주차별/트랙별 만족도 추이 모니터링</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About / Profile Section -->
+        <section class="about-section scroll-reveal" id="about">
+            <h2 class="section-title">Professional Profile</h2>
+            <div class="about-grid">
+                <div class="about-text-card glass">
+                    <h3>성장을 가속화하는 AI 파트너</h3>
+                    <p>
+                        대학원(산업및데이터공학) 시절 <strong>4회의 AI 경진대회에서 수상</strong>하며 탄탄한 모델링 역량을 쌓았습니다. 이후 교육 현장에서 인공지능이 갖는 파급력을 경험하고, 데이콘(Dacon)과 엘리스(Elice)에서 AI 교육 및 챌린지 파트의 성장을 주도해왔습니다.
+                    </p>
+                    <p>
+                        현재는 <strong>멀티캠퍼스</strong>에서 <strong>SSAFY AI 교육과정을 총괄 기획 및 설계</strong>하며, <strong>AI 시스템 개발</strong> 및 <strong>AI 챌린지 개발 운영</strong>을 진행하고 있습니다. 기업과 실무자, 학습자 모두를 조율하며 최고의 가치를 이끌어내는 세심한 PM이자 엔지니어입니다.
+                    </p>
+                    <div class="certificates">
+                        <h4>자격 사항 (Certifications)</h4>
+                        <div class="cert-chips">
+                            <span class="cert-chip">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                                빅데이터분석기사 (과학기술정보통신부)
+                            </span>
+                            <span class="cert-chip">
+                                <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                                데이터분석 준전문가 (ADsP, KDATA)
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="stats-card glass">
+                    <div class="stat-item">
+                        <div class="stat-num gradient-text" data-target="10000">10,000+</div>
+                        <div class="stat-lbl">누적 교육 수강생 수</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num gradient-text" data-target="15">15+</div>
+                        <div class="stat-lbl">기획 및 총괄 AI 챌린지</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num gradient-text" data-target="4">4회</div>
+                        <div class="stat-lbl">AI 해커톤 수상 이력</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-num gradient-text" data-target="1">1년</div>
+                        <div class="stat-lbl">SSAFY 과정 개발·운영 (현재)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tech Stack / Skills Section -->
+        <section class="skills-section scroll-reveal" id="skills">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="skills-grid">
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <div class="skill-icon color-1">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+                        </div>
+                        <h3>AI & System Dev</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><strong>Generative AI & RAG</strong>: LangChain, LangGraph, LLM Agent, RAG Chatbot 구현</li>
+                        <li><strong>AI Stack</strong>: PyTorch, TensorFlow, Scikit-Learn</li>
+                        <li><strong>Languages & Apps</strong>: Python, Gradio, Streamlit, Fast API</li>
+                        <li><strong>Data Processing</strong>: Pandas, NumPy, SQL, EDA, 시계열 분석, 컴퓨터 비전</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <div class="skill-icon color-2">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+                        </div>
+                        <h3>Challenge Operations</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><strong>경진대회 설계</strong>: 기업 맞춤형 예선/본선 문제 출제 및 검수 프로세스 설계</li>
+                        <li><strong>데이터셋 가공</strong>: 실무 제조 데이터, 의료 이미지, 천문학 데이터 정제</li>
+                        <li><strong>플랫폼 관리</strong>: Dacon 및 Elice 기반 수천 명 단위 실시간 해커톤 리드</li>
+                        <li><strong>리포팅</strong>: 참가자 코드 분석, 상위 모델 성능 분석, 기업용 PoC 결과 도출</li>
+                    </ul>
+                </div>
+                <div class="skill-category glass">
+                    <div class="skill-header">
+                        <div class="skill-icon color-3">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+                        </div>
+                        <h3>Curriculum & PM</h3>
+                    </div>
+                    <ul class="skill-list">
+                        <li><strong>교육과정 기획</strong>: B2B/B2C 트렌드(LLM, Cloud, PM 등) 기반 커리큘럼 설계</li>
+                        <li><strong>콘텐츠 제작</strong>: 온라인 강의자료, 비디오 촬영, 실습 환경 설계</li>
+                        <li><strong>고객 커뮤니케이션</strong>: LG, 삼성, SK 등 대기업 교육 담당자와의 요구사항 조율</li>
+                        <li><strong>역량 진단</strong>: TOPA(인공지능 실무 역량 평가) 자격 검정 및 역량 지표 개발</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Timeline Section -->
+        <section class="experience-section scroll-reveal" id="experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline">
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-badge current">Present</div>
+                    <div class="timeline-panel glass">
+                        <span class="timeline-date">2025.06 - 현재 (1년)</span>
+                        <h3 class="timeline-title">멀티캠퍼스 (Multicampus)</h3>
+                        <span class="timeline-role">AI 시스템 개발 & AI 챌린지 디렉팅 / SSAFY AI 과정 총괄</span>
+                        <p class="timeline-desc">
+                            SSAFY(삼성청년SW아카데미)의 AI 트랙 교육 환경을 고도화하기 위한 <strong>실무형 AI 시스템들을 직접 설계·개발</strong>하고, 900명 규모의 대형 <strong>AI 경진대회(Kaggle)</strong>를 출제 및 운영하고 있습니다.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li><strong>SSAFY AI 피드백 시스템 개발</strong>: 학생 코드/답안 자동 채점 및 LLM 기반 맞춤형 오답 퀴즈 생성, 실시간 질의응답 AI Chatbot 시스템 구축</li>
+                            <li><strong>LabHub 만족도 분석 시스템 개발</strong>: 매주 누적되는 만족도 설문 데이터 비동기 파싱 및 LLM 기반 키워드/긍부정 요약 대시보드 구축</li>
+                            <li><strong>대규모 VQA AI 챌린지 총괄 (Kaggle)</strong>: 14기 VQA(Visual Question Answering), 15기 재활용품 VQA Private Kaggle 챌린지 데이터셋 설계 및 경연 운영 (기수별 900명+ 참가)</li>
+                            <li>SSAFY AI 과정 로드맵 수립 및 최신 트렌드(LLM, Multi-Agent, Computer Vision) 실습 인프라 기획</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-badge">Past</div>
+                    <div class="timeline-panel glass">
+                        <span class="timeline-date">2023.01 - 2025.06</span>
+                        <h3 class="timeline-title">(주)엘리스그룹 (Elice Group)</h3>
+                        <span class="timeline-role">콘텐츠팀 / 팀 리더 (Team Leader)</span>
+                        <p class="timeline-desc">
+                            인공지능 교육 콘텐츠 제작을 전담하는 콘텐츠팀을 리딩하고, 국내 유수 대기업의 맞춤형 AI/DX 교육과 초대형 해커톤 기획을 성공적으로 이끌었습니다.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li><strong>RAG 교육과정 설계</strong>: LangChain, LangGraph 기반 실무 챗봇 개발용 교육 제작</li>
+                            <li><strong>대규모 AI 해커톤</strong>: LG Aimers(3000명), 국방경진대회 MAICON(1000명) 등 문항 설계 및 오프라인 운영 총괄</li>
+                            <li><strong>B2B 프로젝트</strong>: 삼성전자 신입/경력 파이썬 교육, SK mySUNI CDS 및 Guided Project 리드</li>
+                            <li><strong>역량 평가 기획</strong>: TOPA(인공지능 실무 역량 평가) 1급~3급 자격 검정 및 문항 설계</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-badge">Past</div>
+                    <div class="timeline-panel glass">
+                        <span class="timeline-date">2022.06 - 2022.12</span>
+                        <h3 class="timeline-title">데이콘주식회사 (Dacon)</h3>
+                        <span class="timeline-role">DS팀 / 교육파트장</span>
+                        <p class="timeline-desc">
+                            인공지능 경진대회 플랫폼 데이콘에서 교육 파트를 리드하며, 대학 및 공공기관 연계 데이터 분석 교육 및 대회를 설계하고 PM 역할을 수행했습니다.
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>제주산학융합원, 제주테크노파크 데이터분석 교육 및 정규대회 PM</li>
+                            <li>기업은행, 충남대, 광운대, 서울디지털재단 교육 & 대회 PM</li>
+                            <li>내부 온라인 교육 플랫폼 기획 및 데이터사이언스(DS) 역량 평가 개발</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects & Challenges Section -->
+        <section class="projects-section scroll-reveal" id="projects">
+            <h2 class="section-title">Projects & Challenges</h2>
+            <p class="section-subtitle">다양한 B2B 솔루션, B2C AI 교육 과정 및 대형 AI 챌린지 구축 실적입니다. (카드를 클릭하면 상세 세부 내역을 보실 수 있습니다.)</p>
+
+            <div class="project-tabs">
+                <button class="tab-btn active" data-filter="all">All Projects</button>
+                <button class="tab-btn" data-filter="system">AI Systems</button>
+                <button class="tab-btn" data-filter="b2b">B2B Projects</button>
+                <button class="tab-btn" data-filter="b2c">B2C AI Courses</button>
+                <button class="tab-btn" data-filter="challenge">AI Challenges</button>
+            </div>
+
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Project: SSAFY AI 피드백 시스템 -->
+                <div class="project-card glass" data-category="system" data-id="ssafy-feedback">
+                    <div class="card-image-placeholder color-system">AI System</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI System Dev</span>
+                        <h3>SSAFY AI 피드백 시스템 (aibot.ssafy.io)</h3>
+                        <p class="project-excerpt">교육생의 과목평가 코딩 및 서술형 답안을 파싱하여 LLM 기반 채점, 지식 레이더 차트 시각화 및 맞춤형 오답 퀴즈/챗봇 튜터링을 제공하는 시스템입니다.</p>
+                        <div class="project-meta">
+                            <span>Client: 멀티캠퍼스</span>
+                            <span>Tech: LLM, FastAPI, React</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: LabHub 만족도 분석 시스템 -->
+                <div class="project-card glass" data-category="system" data-id="labhub">
+                    <div class="card-image-placeholder color-system">AI System</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI System Dev</span>
+                        <h3>LabHub 만족도 분석 시스템</h3>
+                        <p class="project-excerpt">교육생들의 만족도 주관식 설문 파일(.xlsx)을 비동기 분석하고, LLM을 통해 긍정/부정/특이사항 키워드를 분류·시각화하는 대시보드 시스템입니다.</p>
+                        <div class="project-meta">
+                            <span>Client: 멀티캠퍼스</span>
+                            <span>Tech: LLM Sentiment, Pandas</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project: SSAFY VQA AI 챌린지 -->
+                <div class="project-card glass" data-category="challenge" data-id="ssafy-challenge">
+                    <div class="card-image-placeholder color-challenge">AI Challenge</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Challenge</span>
+                        <h3>SSAFY 대규모 Kaggle AI 챌린지</h3>
+                        <p class="project-excerpt">900명 이상의 교육생들이 참여하는 이미지 기반 질의응답(VQA) 및 재활용품 VQA 모델 개발 Private Kaggle 경진대회를 총괄 운영했습니다.</p>
+                        <div class="project-meta">
+                            <span>Platform: Kaggle</span>
+                            <span>Scale: 기수당 900명+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 1 (B2B) -->
+                <div class="project-card glass" data-category="b2b" data-id="samsung">
+                    <div class="card-image-placeholder color-b2b">B2B Project</div>
+                    <div class="project-info">
+                        <span class="project-tag">B2B</span>
+                        <h3>삼성전자 신입/경력 프로그래밍 & AI 교육</h3>
+                        <p class="project-excerpt">삼성전자 DS 부문 신입 및 경력 대상 파이썬 기초부터 AI 실무 역량 강화를 위한 맞춤 교육과정을 리드했습니다.</p>
+                        <div class="project-meta">
+                            <span>Client: 삼성전자 DS</span>
+                            <span>Scale: 다수 차수</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 (B2B) -->
+                <div class="project-card glass" data-category="b2b" data-id="sk">
+                    <div class="card-image-placeholder color-b2b">B2B Project</div>
+                    <div class="project-info">
+                        <span class="project-tag">B2B</span>
+                        <h3>SK mySUNI CDS 및 Guided Project</h3>
+                        <p class="project-excerpt">SK 그룹 CDS 양성과정 및 SKT, 하이닉스 등 계열사별 현업 데이터를 활용한 머신러닝/RAG 실증 프로젝트를 설계했습니다.</p>
+                        <div class="project-meta">
+                            <span>Client: SK 그룹</span>
+                            <span>Type: 실무 데이터 PoC</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 (B2B) -->
+                <div class="project-card glass" data-category="b2b" data-id="lg">
+                    <div class="card-image-placeholder color-b2b">B2B Project</div>
+                    <div class="project-info">
+                        <span class="project-tag">B2B</span>
+                        <h3>LG이노텍 PBL & LG AI 연구원 과정</h3>
+                        <p class="project-excerpt">공학 이미지/기판 데이터 활용 이상 검출 PBL 교육 및 석박사 수준의 정통 인공지능 연구원 교육 모델링을 구축했습니다.</p>
+                        <div class="project-meta">
+                            <span>Client: LG이노텍 / 연구원</span>
+                            <span>Focus: 컴퓨터비전 / 이상검출</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 (B2C) -->
+                <div class="project-card glass" data-category="b2c" data-id="rag">
+                    <div class="card-image-placeholder color-b2c">B2C Course</div>
+                    <div class="project-info">
+                        <span class="project-tag">B2C AI</span>
+                        <h3>LangChain & LangGraph RAG 교육과정</h3>
+                        <p class="project-excerpt">LangChain과 LangGraph를 사용하여 고성능 RAG 기반 AI 챗봇을 설계하고 웹 애플리케이션에 올리는 실전 과정을 개발했습니다.</p>
+                        <div class="project-meta">
+                            <span>Stack: LangGraph, FastAPI</span>
+                            <span>Platform: Elice Online</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 (B2C) -->
+                <div class="project-card glass" data-category="b2c" data-id="chatgpt">
+                    <div class="card-image-placeholder color-b2c">B2C Course</div>
+                    <div class="project-info">
+                        <span class="project-tag">B2C AI</span>
+                        <h3>ChatGPT 업무 생산성 및 프롬프트 엔지니어링</h3>
+                        <p class="project-excerpt">Gradio, Streamlit 및 LLM API를 연계하여 비개발자도 손쉽게 AI 생산성 도구를 구축하는 시리즈 과정을 선보였습니다.</p>
+                        <div class="project-meta">
+                            <span>Topic: Prompt Engineering</span>
+                            <span>Format: 4개 온라인 모듈</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 (Challenge) -->
+                <div class="project-card glass" data-category="challenge" data-id="lg-aimers">
+                    <div class="card-image-placeholder color-challenge">AI Challenge</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Challenge</span>
+                        <h3>LG Aimers AI 해커톤 (3000명 규모)</h3>
+                        <p class="project-excerpt">LG 그룹 주최의 대표적인 AI 청년 육성 프로그램의 교육과정 수립 및 예·본선 AI 문제 설계, 오프라인 대회를 리드했습니다.</p>
+                        <div class="project-meta">
+                            <span>Host: LG AI 연구원</span>
+                            <span>Scale: 약 3,000명</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 (Challenge) -->
+                <div class="project-card glass" data-category="challenge" data-id="maicon">
+                    <div class="card-image-placeholder color-challenge">AI Challenge</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Challenge</span>
+                        <h3>국방인공지능경진대회 (MAICON)</h3>
+                        <p class="project-excerpt">군 내 인공지능 역량 강화를 위해 국방부 주관으로 열린 MAICON의 예·본선 모델링 환경을 구축하고 오프라인 행사를 조율했습니다.</p>
+                        <div class="project-meta">
+                            <span>Host: 국방부</span>
+                            <span>Award: 국방부 장관상 등</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 (Challenge) -->
+                <div class="project-card glass" data-category="challenge" data-id="kasi">
+                    <div class="card-image-placeholder color-challenge">AI Challenge</div>
+                    <div class="project-info">
+                        <span class="project-tag">AI Challenge</span>
+                        <h3>한국천문연구원-KAIST 천문우주 AI 경진대회</h3>
+                        <p class="project-excerpt">실제 우주 관측 이미지 데이터를 가공해 태양 코로나 및 홍염 이벤트를 고도로 탐지하는 문제를 개발하고 대회를 운영했습니다.</p>
+                        <div class="project-meta">
+                            <span>Host: 천문연, KAIST</span>
+                            <span>Focus: 이미지 이상 탐지</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section scroll-reveal" id="contact">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-grid">
+                <div class="contact-info-card glass">
+                    <h3>연락처 및 링크</h3>
+                    <p>언제든 커피챗이나 이직 제안을 환영합니다. 아래 채널을 통해 연락 주시기 바랍니다.</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <span class="icon">📧</span>
+                            <div>
+                                <span class="lbl">이메일</span>
+                                <a href="mailto:jungsungmoon01@gmail.com" class="val">jungsungmoon01@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="icon">📞</span>
+                            <div>
+                                <span class="lbl">연락처</span>
+                                <a href="tel:+821091163036" class="val">+82 (0)10-9116-3036</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <span class="icon">🔗</span>
+                            <div>
+                                <span class="lbl">이력 리소스</span>
+                                <div class="link-group">
+                                    <a href="https://moonsworkspace.notion.site/Moon-s-Workspace-9506b0b6ca234f94b95153edafdc86c9" target="_blank" class="val-link">노션 워크스페이스</a>
+                                    <a href="https://www.linkedin.com/in/%EC%84%B1%EB%AC%B8-%EC%A0%95-71964028b/" target="_blank" class="val-link">링크드인 프로필</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-card glass">
+                    <h3>간편 메시지 보내기</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">이름 / 기업명</label>
+                            <input type="text" id="name" required placeholder="홍길동 / 멀티캠퍼스">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">연락 가능한 이메일</label>
+                            <input type="email" id="email" required placeholder="example@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">메시지 내용</label>
+                            <textarea id="message" rows="4" required placeholder="이직 제안 및 포지션 상세 정보를 작성해 주세요."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">메시지 전송</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2026 Sungmun Jeong. All rights reserved. Created for Career Opportunity.</p>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div class="modal" id="projectModal">
+        <div class="modal-backdrop" id="modalBackdrop"></div>
+        <div class="modal-content glass">
+            <button class="modal-close" id="modalClose" aria-label="닫기">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="modal-body" id="modalBody">
+                <!-- Content will be dynamically inserted here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
